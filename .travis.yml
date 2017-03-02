@@ -1,10 +1,11 @@
+services:
+  - mysql
+
 language: "perl"
 perl:
   - "5.20"
 
 before_install:
-  - sudo apt-get -qq update
-  - sudo apt-get install mysql-server
   - cpanm -q --notest install Sparrow
 
 install:
