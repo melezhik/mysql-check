@@ -1,0 +1,6 @@
+{
+  "name" : "mysql-check",
+  "description" : "checks if mysql server is healthy",
+  "version" : "0.0.1",
+  "category" : "monitoring"
+}
