@@ -5,7 +5,7 @@ perl:
 before_install:
   - sudo apt-get -qq update
   - sudo apt-get install mysql-server
-  - sudo cpanm -q --notest install Sparrow
+  - cpanm -q --notest install Sparrow
 
 install:
   - sparrow index update
