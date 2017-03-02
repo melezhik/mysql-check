@@ -1,0 +1,16 @@
+language: "perl"
+perl:
+  - "5.20"
+
+before_install:
+  - sudo apt-get -qq update
+  - sudo apt-get install mysql-server
+  - sudo service mysqld start
+  - sudo cpanm -q --notest install Sparrow
+
+install:
+  - sparrow index update
+  - sparrow plg install mysql-check
+
+script:
+  - sparrow plg run mysql-check

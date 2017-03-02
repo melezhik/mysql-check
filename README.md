@@ -2,6 +2,10 @@
 
 Checks if mysql server is healthy.
 
+# Build status
+
+[![Build Status](https://travis-ci.org/melezhik/mysql-check.svg)](https://travis-ci.org/melezhik/mysql-check)
+
 # INSTALL
 
     $ sparrow plg install mysql-check
