@@ -1,5 +1,5 @@
 if ps uax|grep mysqld|grep -v grep; then
   exit 0
 else
-  exit 1
+  exit 2
 fi
